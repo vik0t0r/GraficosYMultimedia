@@ -27,7 +27,26 @@ public class SnakeController : MonoBehaviour {
         GrowSnake();
         GrowSnake();
         GrowSnake();
-
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
     }
 
     // Update is called once per frame
@@ -45,10 +64,13 @@ public class SnakeController : MonoBehaviour {
         PositionsHistory.Insert(0, transform.position);
 
         // Move body parts
-        int index = 1;
+        int index = 0;
         foreach (var body in BodyParts) {
             Vector3 point = PositionsHistory[Mathf.Clamp(Mathf.RoundToInt(index * Gap), 0, PositionsHistory.Count - 1)];
-
+            // adjust height
+            point -= new Vector3(0,0.075f,0);
+            
+            
             // Move body towards the point along the snakes path
             Vector3 moveDirection = point - body.transform.position;
             body.transform.position += moveDirection * BodySpeed * Time.deltaTime;

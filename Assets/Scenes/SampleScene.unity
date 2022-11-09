@@ -412,11 +412,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7068961223275554044, guid: b311e49ab1a49e3409d4f6b95b2b9ef6, type: 3}
       propertyPath: Gap
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7068961223275554044, guid: b311e49ab1a49e3409d4f6b95b2b9ef6, type: 3}
       propertyPath: BodySpeed
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7068961223275554044, guid: b311e49ab1a49e3409d4f6b95b2b9ef6, type: 3}
       propertyPath: BodyPrefab
